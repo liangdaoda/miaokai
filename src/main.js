@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'vue-awesome'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import store from './store'
 
 Vue.use(ElementUI)
 Vue.component('Icon',Icon)
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -45,14 +45,15 @@ export default {
     name:"Aside",
     data () {
         return{
-            isCollapse: false
         }
     },
-    props:[
-        route
-    ],
     methods: {
       
+    },
+    watch:{
+        $route(){
+            this.route = this.$route.path
+        }
     },
     created(){
         console.log(this)

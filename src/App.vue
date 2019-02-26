@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <myHeader></myHeader>
-    <Aside :route="route"></Aside>
+    <Aside></Aside>
     <Main></Main>
   </div>
 </template>
@@ -24,12 +24,8 @@ export default {
   },
   created(){
     console.log(this)
-  },
-  watch:{
-    $route(){
-      console.log(this.$route)
-    }
   }
+  
 }
 </script>
 
