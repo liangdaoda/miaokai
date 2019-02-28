@@ -38,6 +38,23 @@ export default {
         chengeName(){
             console.log(this.loginFrom.name );
         }
+    },
+    created(){
+        this.$axios({
+            url: 'api/login',
+            methos: 'get',
+            params: {
+                id: 122,
+                name: 'ldd'
+            }
+        })
+        .then( res => {
+            console.log(res)
+            
+        })
+        .catch( res => {
+            console.log(res)
+        })
     }
 }
 </script>

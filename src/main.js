@@ -9,11 +9,13 @@ import 'vue-awesome'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import store from './store'
+import axios from 'axios'
 
 Vue.use(ElementUI)
 Vue.component('Icon',Icon)
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 /* eslint-disable no-new */
 new Vue({
