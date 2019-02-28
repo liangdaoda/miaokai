@@ -2,7 +2,11 @@ const Api = {
     // 登录
     login: {
         method: 'post',
-        url: Url + '/login'
+        url: '/login'
+    },
+    signin: {
+        method: 'post',
+        url:  '/signin'
     }
 }
 

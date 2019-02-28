@@ -21,6 +21,8 @@
     </el-row>
 </template>
 <script>
+import request from '../services/resquest.js'
+import apiSetting from '../services/apiSetting.js'
 export default {
     name: 'Login',
     data(){
@@ -40,19 +42,7 @@ export default {
         }
     },
     created(){
-        this.$axios({
-            url: 'api/login',
-            methos: 'get',
-            params: {
-                id: 122,
-                name: 'ldd'
-            }
-        })
-        .then( res => {
-            console.log(res)
-            
-        })
-        .catch( res => {
+        request(apiSetting.signin, {name:'dd', password: 'dd'}).then( res => {
             console.log(res)
         })
     }
