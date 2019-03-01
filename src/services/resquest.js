@@ -1,10 +1,10 @@
 import axios from 'axios'
-import apiUrl from './apiUrl'
+import ApiPath from './apiUrl'
 
 const request = async (opts , data) => {
     let requestData = {
         method: opts.method,
-        baseURL: apiUrl,
+        baseURL: ApiPath,
         url: opts.url,
         timeout: 5000,
         params: data,
